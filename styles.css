@@ -1,0 +1,347 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #F6F7FF;
+    font-family: 'Akshar', sans-serif;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.top-panel{
+    display: none;
+}
+
+.main-container{
+    display: flex;
+}
+
+
+
+.side-panel{
+    margin-left: 50px;
+    margin-top:30px;
+    width: 20%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.sidepanelbody{
+    background-color: #54b689;
+    border-radius: 4%;
+    height: 100vh;
+}
+
+.name{
+    padding-top: 20%;
+}
+
+
+
+.side-panel li{
+    list-style: none;
+}
+
+.side-panel ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profileimage{
+    width:100%;
+    height: 20vh;
+    align-items:center;
+    background-color:252d5d;
+
+}
+.profileimage img{
+    height: 100px;
+    width:100px;
+    border-radius:50%;
+    margin-top: 20%;
+ }
+.profileimage li{
+    height:0px
+    
+}
+
+#socialmedialinks{
+    display: flex;
+    justify-content: space-around;
+}
+
+#socialmedialinks li{
+ flex-basis: 27%;
+ padding-top: 20px;
+ margin:20px
+}
+
+right-side-panel{
+    flex: 3;
+}
+.hero-container{
+    background-color: #fafafa;
+    height: 62vh;
+    margin-top: 3%;
+    margin-left:2%;
+    width: 70vw;
+    border-radius: 5%;
+}
+
+.hero-container p{
+    padding-top: 15%;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 2.5rem;
+    color: #28387a
+}
+
+.hero-container a{
+    color: #ffffff;
+    background-color: #54b689;
+    margin-left: 40%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    
+}
+
+.skills-container{
+
+    height: 60vh;
+    width:70vw;
+    background-color: #fafafa;
+    border-radius: 5%;
+    margin-top: 3%;
+    margin-left: 2%;
+    color:#28387a;
+}
+
+.skills-container h1{
+    text-align: center;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    font-size: 2rem;
+
+}
+.card{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    padding-bottom: 5%;
+    font-size: 1rem;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover{
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .card{
+    padding: 0.2rem 1rem;
+  }
+
+  .skills{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 5%;
+  }
+
+  .skillbutton a{
+    color: #ffffff;
+    background-color: #54b689;
+    margin-left: 38%;
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    text-decoration: none;
+    display: none;
+  }
+
+  .project-container{
+    height: 60vh;
+    width:70vw;
+    background-color: #fafafa;
+    border-radius: 5%;
+    margin-top: 2%;
+    margin-left: 3%;
+    color:#28387a;   
+  }
+
+  .project-container h1{
+    text-align: center;
+    margin-bottom: 2%;
+    padding-top: 2%;
+
+}
+
+@media(max-width: 1024px){
+    .hero-container a{
+        color: #ffffff;
+        background-color: #54b689;
+        margin-left: 35%;
+        font-size: 1.5rem;
+        padding: 0.5rem;
+        text-decoration: none;
+    }
+}
+
+
+@media(max-width: 912px){
+    html{
+        font-size: 70%;
+    }
+
+    .top-panel{
+        height: 10vh;
+        margin-left: 5%;
+        width: 90%;
+        display: none;
+        margin-top: 5%;
+            
+    }
+    
+    .top-panel-body{
+        background-color:#54b689;
+        padding: 10px 20px;
+        border-radius: 20px;
+        height: 10vh;   
+    }
+    
+    .top-panel-body ul{
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .top-panel-body li{
+        list-style:none
+    }
+    
+    .top-panel-body .hamburger{
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        vertical-align: middle;
+        padding: 0;
+        font-size: 4rem;
+        margin-top: 3%;
+        margin-left: 15%;
+        display: inline;
+        color: #ffffff;
+        margin-right: 5%;
+    }
+    
+    .top-panel-body .profileimage img {
+        height: 100px;
+        width:100px;
+        border-radius:50%;
+        margin-top: 5%;
+        margin-left: 5%;
+        display: inline;
+        margin-right: 3%;
+    }
+    
+    .top-panel-body .mobile-name ol{
+        overflow-x:hidden;
+        white-space:nowrap; 
+        width: 110%;
+        margin-left: 8%;
+        margin-top: 5%;
+    }
+    
+    .top-panel-body .mobile-name li{
+        display: inline;
+        
+    }
+    
+    .top-panel-body .mobile-name li h3{
+        padding: 0.5%;
+        width: 80%;
+        display: inline;
+        font-size: 3rem;
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    
+    .side-panel{
+     display: none;
+    }
+
+    .hero-container {
+        height:50vh;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .skills-container{
+        height:50vh;
+        width: 90%;
+        margin-left: 5%;
+
+    }
+
+    .project-container{
+        height:50vh;
+        width: 90%;
+        margin-left: 5%;
+
+    }
+
+    .hero-container p{
+        padding: 15% 15%;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        text-align: center;
+        font-size: 3.5rem;
+        padding-bottom: 2.5rem;
+        color: #28387a
+    }
+
+    .skills-container h1{
+        text-align: center;
+        margin-bottom: 5%;
+        padding-top: 5%;
+        font-size: 3rem;
+    
+    }
+
+    .project-container h1{
+        text-align: center;
+        margin-bottom: 5%;
+        padding-top: 5%;
+        font-size: 3rem;
+    
+    }
+
+    .hero-container a{
+        color: #ffffff;
+        background-color: #54b689;
+        margin-left: 40%;
+        margin-top: 10%;
+        font-size: 2rem;
+        padding: 1.5rem;
+        text-decoration: none;
+    }   
+
+    .card{
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        width: 30%;
+        padding-bottom: 7%;
+        font-size: 2rem;
+      }
+    
+}

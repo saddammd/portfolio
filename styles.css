@@ -205,8 +205,8 @@ right-side-panel{
     .top-panel{
         height: 10vh;
         margin-left: 5%;
-        width: 90%;
-        display: none;
+        width: 85vw;
+        display: block;
         margin-top: 5%;
             
     }
@@ -215,7 +215,7 @@ right-side-panel{
         background-color:#54b689;
         padding: 10px 20px;
         border-radius: 20px;
-        height: 10vh;   
+        height: 10vh;  
     }
     
     .top-panel-body ul{
@@ -270,9 +270,10 @@ right-side-panel{
         padding: 0.5%;
         width: 80%;
         display: inline;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #ffffff;
         text-align: center;
+        margin-top: 3%;
     }
     
     
@@ -282,20 +283,20 @@ right-side-panel{
 
     .hero-container {
         height:50vh;
-        width: 90%;
+        width: 85vw;
         margin-left: 5%;
     }
 
     .skills-container{
         height:50vh;
-        width: 90%;
+        width: 85vw;
         margin-left: 5%;
 
     }
 
     .project-container{
         height:50vh;
-        width: 90%;
+        width: 85vw;
         margin-left: 5%;
 
     }
@@ -344,4 +345,53 @@ right-side-panel{
         font-size: 2rem;
       }
     
+}
+
+@media(max-width: 412px){
+
+    html{
+        font-size: 50%;
+    }
+    .top-panel{
+        width: 130vw;
+    }
+    .top-panel-body{
+        padding: 1rem 1.3rem;
+        border-radius: 2.2rem;
+    }
+
+    .top-panel-body .hamburger{
+        margin-top: 1%;
+        margin-left: 10%;
+        margin-right: 3%;
+    }
+
+    .top-panel-body .profileimage img {
+        height: 7rem;
+        width:7rem;
+        margin-right: 2%;
+    }
+
+    .top-panel-body .mobile-name li h3{
+        font-size: 3rem;
+       }
+
+       .hero-container {
+        height:50vh;
+        width: 127vw;
+        margin-left: 5%;
+    }
+
+    .skills-container{
+        height:50vh;
+        width: 127vw;
+        margin-left: 5%;
+
+    }
+    .project-container{
+        height:50vh;
+        width: 127vw;
+        margin-left: 5%;
+
+ 
 }

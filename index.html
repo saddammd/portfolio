@@ -16,33 +16,39 @@
 
 <body>
 
-    <section class="top-panel">
-        <div class="top-panel-body">
-            <ul>
-                <div class = "hamburger">
-                    <li><i class="fa-solid fa-bars"></i></li>
-                </div>
-                <div class="mobileprofileimage">
-                    <li><img src="images/profile.jpg"></li>
-                </div>
-                <div class="mobile-name">
-                    <ol>
-                    <li><h3>Mohammed </h3></li>
-                    <li><h3>Saddam</h3></li>
-                    <li><h3>Hussain</h3></li>
-                    </ol>
-                </div>
-            </ul>
-        </div>
-    </section>
+   
 
 
-    <div class="main-container">
+    <div class="main-container" id="main-container">
 
+        <section class="top-panel" id = "top-panel">
+            <div class="top-panel-body">
+                <ul>
+                    <div class = "hamburger" id = hamburger>
+                        <li><i class="fa-solid fa-bars" onclick="openMenu()"></i>
+                        
+                        </li>
+                    </div>
+                    <div class="mobileprofileimage">
+                        <li><img src="images/profile.jpg"></li>
+                    </div>
+                    <div class="mobile-name">
+                        <ol>
+                        <li><h3>Mohammed </h3></li>
+                        <li><h3>Saddam</h3></li>
+                        <li><h3>Hussain</h3></li>
+                        </ol>
+                    </div>
+                </ul>
+            </div>
+        </section>
         
-        <section class="side-panel">
+        <section class="side-panel" id = "side-panel">
             <div class="sidepanelbody">
                 <ul>
+                    <div class="close" id = "close">
+                        <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                    </div>
                     <div class="profileimage">
                         <li><img src="images/profile.jpg"></li>
                     </div>
@@ -71,6 +77,13 @@
                     </div>
                 </ul>
                 <hr>
+
+                <div class="phone">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    
+                <p> +91 9566099233 </p>
+                </div>
+
             </div>
 
 
@@ -78,7 +91,7 @@
 
         </section>
 
-        <section class="right-side-panel">
+        <section class="right-side-panel" id = "right-side-panel">
 
             <div class="hero-container">
                 <p>I am a Bilingual (N2 Certified) Java developer.<br>
@@ -174,6 +187,34 @@
 
         </section>
     </div>
+
+
+    <script>
+
+        function openMenu(){
+
+            document.getElementById("side-panel").style.transition = "0.5s"
+            document.getElementById("side-panel").style.marginLeft = "40px";
+            document.getElementById("side-panel").style.width = "200px";
+            document.getElementById("top-panel").style.marginLeft = "250px";
+            document.getElementById("right-side-panel").style.marginLeft = "240px";
+            document.getElementById("close").style.display = "block";
+            document.getElementById("side-panel").style.transition = "0.5s";
+
+        }
+
+        function closeMenu(){
+            document.getElementById("side-panel").style.marginLeft = "-300px";
+            document.getElementById("side-panel").style.width = "20%";
+            document.getElementById("top-panel").style.marginLeft = "5%";
+            document.getElementById("right-side-panel").style.marginLeft = "0px";
+            document.getElementById("side-panel").style.transition = "0.5s";
+
+
+        }
+
+    </script>
+
 </body>
 
 </html>

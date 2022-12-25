@@ -273,7 +273,7 @@ right-side-panel{
 
     .top-panel-body .mobile-name ol{
 
-        width: 110%;
+        width: 100%;
     }
     
     .top-panel-body .mobile-name li{
@@ -283,13 +283,12 @@ right-side-panel{
     }
     
     .top-panel-body .mobile-name li h3{
-        width: 80%
+        width: 80%;
         line-height: 1.2;
         display: inline;
         font-size: 20px;
         color: #ffffff;
         text-align: center;
-        word-wrap: break-word;
     }
     
     .profileimage img{

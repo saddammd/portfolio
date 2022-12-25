@@ -210,7 +210,7 @@ right-side-panel{
     .top-panel{
         max-height: 15vh;
         margin-left: 5%;
-        width: clamp(80vw, 85vw, 85vw);
+        width: clamp(85vw, 85vw, 85vw);
         display: block;
         margin-top: 5%;
             
@@ -283,20 +283,15 @@ right-side-panel{
     }
     
     .top-panel-body .mobile-name li h3{
-        width: clamp(90%, 90%, 90%);
+        width: 80%
         line-height: 1.2;
         display: inline;
         font-size: 20px;
         color: #ffffff;
         text-align: center;
+        word-wrap: break-word;
     }
     
-    
-    .side-panel {
-    margin-left: -300px;
-
-    }
-
     .profileimage img{
         margin-top: 0;
 
@@ -355,27 +350,13 @@ right-side-panel{
     
             
     .sidepanelbody{
-        background-color: #54b689;
-        border-radius: 4%;
         max-height: 45rem;
     }
     
     .name{
         padding-top: 8%;
     }
-    
-    
-    
-    .side-panel li{
-        list-style: none;
-    }
-    
-    .side-panel ul{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
+        
     .profileimage{
         width:100%;
         height: 20vh;
@@ -410,15 +391,25 @@ right-side-panel{
     right-side-panel{
         flex: 3;
     }
+
+    .side-panel {
+        margin-left: -300px;
+    
+        }
+    
     
 }
 
-@media(max-width: 336px){
+@media(max-width: 400px){
     .top-panel{
         max-height: 20vh;
     }
 
     .top-panel-body{
         max-height: 20vh;
+    }
+
+    .top-panel-body .mobile-name li h3{
+        word-wrap: break-word;
     }
 }

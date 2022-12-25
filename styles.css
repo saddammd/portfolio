@@ -401,11 +401,11 @@ right-side-panel{
 
 @media(max-width: 400px){
     .top-panel{
-        max-height: 20vh;
+        max-height: 15vh;
     }
 
     .top-panel-body{
-        max-height: 20vh;
+        max-height: 15vh;
     }
 
     .top-panel-body .mobile-name li h3{

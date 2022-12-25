@@ -208,7 +208,7 @@ right-side-panel{
 @media(max-width: 912px){
     
     .top-panel{
-        max-height: 15vh;
+        max-height: 10vh;
         margin-left: 5%;
         width: clamp(85vw, 85vw, 85vw);
         display: block;
@@ -225,7 +225,7 @@ right-side-panel{
         padding-top: 10px;
         padding-bottom:50px;
         border-radius: 20px;
-        max-height: 15vh;  
+        max-height: 10vh;  
         overflow: hidden;
     }
     

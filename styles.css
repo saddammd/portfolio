@@ -33,12 +33,12 @@ body{
     color: #ffffff;
     text-align: center;
     position: fixed;
-    border: solid 1px #ffffff;
+    box-shadow: 20px;
 }
 
 .sidepanelbody .close{
     margin-left:140px;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 20px;
     display: none;
 }
@@ -105,15 +105,15 @@ right-side-panel{
 }
 .hero-container{
     background-color: #fafafa;
-    max-height: 250vh;
-    margin-top: 3%;
+    min-height: 15rem;
+    margin-top: 5%;
     margin-left:35%;
     width: 70vw;
     border-radius: 5%;
 }
 
 .hero-container p{
-    padding-top: 15%;
+    padding-top: 10%;
     text-align: center;
     padding-bottom: clamp(1.0rem, 2.0vw, 1.2rem);
     color: #28387a
@@ -122,9 +122,9 @@ right-side-panel{
 .hero-container a{
     color: #ffffff;
     background-color: #54b689;
-    margin-left: 40%;
+    margin-left: clamp(40%, 30%, 40%);;
     font-size: clamp(1.2rem, 2.5vw, 1.2rem);
-    padding: clamp(0.4rem, 2.5vw, 0.6rem);
+    padding: clamp(0.2rem, 1.2rem, 0.6rem);
     text-decoration: none;
     
 }
@@ -204,11 +204,6 @@ right-side-panel{
     margin-left: 10px;
 }
 
-@media(max-width: 1024px){
-    .hero-container{
-    min-height: 70vh;
-    }
-}
 
 
 @media(max-width: 912px){
@@ -252,18 +247,21 @@ right-side-panel{
         outline: none;
         padding: 0;
         font-size: 25px;
-        margin-top: 0px;
         margin-left: 15px;
         display: inline;
         color: #ffffff;
         margin-right: 10px;
     }
 
+    .top-panel-body .hamburger li{
+        }
+
     .top-panel-body .hamburger:hover{
         color: #28387a;
     }
     
     .top-panel-body .mobileprofileimage img{
+        margin-top: 0px;
         height: 40px;
         width:40px;
         overflow: hidden;
@@ -274,15 +272,17 @@ right-side-panel{
     }
     .top-panel-body .mobile-name{
         margin: 4px;
+
     }
 
     .top-panel-body .mobile-name ol{
-        white-space:nowrap; 
+
         width: 110%;
     }
     
     .top-panel-body .mobile-name li{
         display: inline;
+
         
     }
     
@@ -306,10 +306,8 @@ right-side-panel{
     }
 
     .hero-container {
-        height:50vh;
         width: 85vw;
         margin-left: 5%;
-        margin-top: 40px;
     }
 
     .skills{
@@ -356,13 +354,75 @@ right-side-panel{
         margin-bottom: 5%;
         padding-top: 5%;
     
-    }
-
-    .hero-container a{
+    }    
+    
+    .side-panel{
+        margin-left: 30px;
+        padding-left: 10px;
+        margin-top:30px;
+        width: 20%;
         color: #ffffff;
+        text-align: center;
+        position: fixed;
+        border: solid 1px #ffffff;
+    }
+    
+        
+    .sidepanelbody{
         background-color: #54b689;
-        margin-left: clamp(35%, 30%, 40%);
-        text-decoration: none;
-    }   
+        border-radius: 4%;
+        max-height: 45rem;
+    }
+    
+    .name{
+        padding-top: 8%;
+    }
+    
+    
+    
+    .side-panel li{
+        list-style: none;
+    }
+    
+    .side-panel ul{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .profileimage{
+        width:100%;
+        height: 20vh;
+        align-items:center;
+        background-color:252d5d;
+    
+    }
+    .profileimage img{
+        height: 90px;
+        width:90px;
+        border-radius:50%;
+        margin-top: 8%;
+        border: solid 2px;
+        color:#ffffff;
+     }
+    .profileimage li{
+        height:0px
+        
+    }
+    
+    #socialmedialinks{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #socialmedialinks li{
+     flex-basis: 27%;
+     padding-top: 20px;
+     margin:20px
+    }
+    
+    right-side-panel{
+        flex: 3;
+    }
     
 }
